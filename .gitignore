@@ -27,3 +27,16 @@
 *.exe
 *.out
 *.app
+
+# Java classes
+*.class
+
+sdk/CMakeFiles
+sdk/Makefile
+sdk/CMakeCache.txt
+sdk/cmake_install.cmake
+sdk/samples/CMakeCache.txt
+sdk/samples/Makefile
+sdk/samples/CMakeFiles
+sdk/samples/cmake_install.cmake
+sdk/mrover-lidar.jar
