@@ -8,7 +8,7 @@ JFLAGS = -Xlint
 #JDKINC = -I /usr/lib/jvm/java-7-openjdk-amd64/include
 #JDKINC = -I /usr/lib/jvm/java-8-oracle/include -I /usr/lib/jvm/java-8-oracle/include/linux
 JDKINC = -I /usr/lib/jvm/zulu-embedded-8-armhf/include -I /usr/lib/jvm/zulu-embedded-8-armhf/include/linux
-#JDKINC = -I /opt/jdk1.7.0_67/include -I /opt/jdk1.7.0_67/include/linux
+
 
 
 # Set SIMD compile params based on architecture
