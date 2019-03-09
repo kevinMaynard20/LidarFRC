@@ -2,13 +2,11 @@ package de.konteno.ao.mrover.lidar;
 
 import de.konteno.ao.mrover.lidar.NativeUtils;
 
-public class YdLidarX4
-{
+public class YdLidarX4 {
 
-	static 
-    {
-        // System.loadLibrary("lidar");
-        try {
+	static {
+		// System.loadLibrary("lidar");
+		try {
 			System.loadLibrary("lidar");
 		} catch (UnsatisfiedLinkError e) {
 			try {
@@ -18,36 +16,34 @@ public class YdLidarX4
 			} catch (java.io.IOException e1) {
 				throw new RuntimeException(e1);
 			}
-		}        
+		}
 	}
 
-	private native void init(String port, int minRange, int maxRange, int minAngle, int maxAngle);
+	public native void init(String port, int minRange, int maxRange, int minAngle, int maxAngle);
 
-    private native int[] scan();
+	public native int[] scan();
 
-    private native void turnOn();
-    private native void turnOff();
+	public native void turnOn();
 
-    public static void main(String[] args) throws Exception {
-        YdLidarX4 x = new YdLidarX4();
-        x.init("/dev/ttyUSB0", 10, 500, -180, 180);
+	public native void turnOff();
 
-        x.turnOff();
-        Thread.sleep(5000);
-        x.turnOn();
+	public static void main(String[] args) throws Exception {
+		YdLidarX4 x = new YdLidarX4();
+		x.init("/dev/ttyUSB0", 10, 500, -180, 180);
 
+		x.turnOff();
+		Thread.sleep(5000);
+		x.turnOn();
 
-        for (int n=0; n<3; ++n) {
-            
-            int[] dist = x.scan();
-            for (int d : dist) {
-                System.out.print(d + " ");
-            }
-            System.out.println();
-            // x.turnOff();
-            Thread.sleep(2000);
-    
-        }
+		for (int n = 0; n < 3; ++n) {
 
-    }
-} 
+			int[] dist = x.scan();
+			for (int d : dist) {
+				System.out.print(d + " ");
+			}
+			System.out.println();
+			// x.turnOff();
+			Thread.sleep(2000);
+		}
+	}
+}
