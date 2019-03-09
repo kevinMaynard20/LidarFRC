@@ -25,6 +25,7 @@ JNIEXPORT void JNICALL Java_de_konteno_ao_mrover_lidar_YdLidarX4_init
 (JNIEnv *env, jobject, jstring jport, jint jminRange, jint jmaxRange, jint jminAngle, jint jmaxAngle)
 {
 
+/*
     printf("__   ______  _     ___ ____    _    ____  \n");
     printf("\\ \\ / /  _ \\| |   |_ _|  _ \\  / \\  |  _ \\ \n");
     printf(" \\ V /| | | | |    | || | | |/ _ \\ | |_) | \n");
@@ -32,7 +33,7 @@ JNIEXPORT void JNICALL Java_de_konteno_ao_mrover_lidar_YdLidarX4_init
     printf("  |_| |____/|_____|___|____/_/   \\_\\_| \\_\\ \n");
     printf("\n");
     fflush(stdout);
-
+*/
     const char *port = env->GetStringUTFChars(jport, nullptr);
 
     laser.setSerialPort(port);
@@ -80,7 +81,7 @@ JNIEXPORT jintArray JNICALL Java_de_konteno_ao_mrover_lidar_YdLidarX4_scan(JNIEn
             float angle = scan.config.min_angle + i * scan.config.ang_increment;
             dist[i] = 100 * scan.ranges[i];
         }
-        ydlidar::console.message("Scan received[%llu]: %u ranges", scan.self_time_stamp, (unsigned int)scan.ranges.size());
+        //ydlidar::console.message("Scan received[%llu]: %u ranges", scan.self_time_stamp, (unsigned int)scan.ranges.size());
     }
     else
     {
