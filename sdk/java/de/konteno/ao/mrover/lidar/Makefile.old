@@ -41,13 +41,18 @@ jnilidar.o: jnilidar.c YdLidarX4.h
 
 
 YdLidarX4.class: YdLidarX4.java
-	javac -h -classpath $(JAVADIR) YdLidarX4.java
+	javac -classpath $(JAVADIR) YdLidarX4.java
 
 NativeUtils.class: NativeUtils.java
-	javac -h -classpath $(JAVADIR) NativeUtils.java
+	javac -classpath $(JAVADIR) NativeUtils.java
 
+
+YdLidarX4.h: YdLidarX4.class
+	javac -h -o YdLidarX4.h -classpath $(JAVADIR) -jni de.konteno.ao.mrover.lidar.YdLidarX4
+
+	
 test1:
-	export LD_LIBRARY_PATH=/mnt/c/Users/Kevin/Desktop/GitHubFRC/ydlidar-jni/sdk; java -Djava.library.path=. -classpath $(JAVADIR) de.konteno.ao.mrover.lidar.YdLidarX4
+	java -Djava.library.path=. -classpath $(JAVADIR) de.konteno.ao.mrover.lidar.YdLidarX4
 
 test2:
 	java -cp $(BASEDIR)/mrover-lidar.jar de.konteno.ao.mrover.lidar.YdLidarX4

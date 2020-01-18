@@ -29,7 +29,7 @@ public class YdLidarX4 {
 
 	public static void main(String[] args) throws Exception {
 		YdLidarX4 x = new YdLidarX4();
-		x.init("/dev/ttyUSB0", 10, 500, -180, 180);
+		x.init("/dev/ttyS0", 10, 500, -180, 180);
 
 		x.turnOff();
 		Thread.sleep(5000);
