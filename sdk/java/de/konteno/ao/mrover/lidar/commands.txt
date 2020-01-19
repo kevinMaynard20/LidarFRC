@@ -1,0 +1,169 @@
+    1  cd Desktop
+    2  ls
+    3  cd /mnt/c/Users/Kevin/Desktop/GitHubFRC/
+    4  pwd
+    5  git clone https://github.com/EAIBOT/ydlidar.git
+    6  sudo git clone https://github.com/EAIBOT/ydlidar.git
+    7  ls
+    8  cd ydlidar
+    9  git remote -v
+   10  git remote set-url origin https://github.com/kevinMaynard20/LidarFRC.git
+   11  sudo git remote set-url origin https://github.com/kevinMaynard20/LidarFRC.git
+   12  git push -u origin master
+   13  ls
+   14  cd ..
+   15  ls
+   16  sudo chmod -R ydlidar/
+   17  sudo chmod -R 777 ydlidar/
+   18  cd ydlidar/
+   19  git push -u origin master
+   20  sudo ggit push -u origin master
+   21  git puit push -u origin master
+   22  sudo git push -u origin master
+   23  cd ..
+   24  rm -rf ydlidar/
+   25  git clone https://github.com/ospringauf/ydlidar-jni.git
+   26  sudo su root
+   27  cd /mnt
+   28  /c
+   29  c
+   30  cd c
+   31  cd /User
+   32  cd Users/
+   33  cd mayna
+   34  cd /mayna
+   35  cd mayna/
+   36  ls 
+   37  ls Users
+   38  ls /Users
+   39  ls 
+   40  sudo ls
+   41  cd Kevin/
+   42  cd Desktop/
+   43  cd GitHubFRC/
+   44  cd ydlidar-jni/
+   45  cd sdk/
+   46  cmake .
+   47  make
+   48  sudo cp libydlidar_driver.so /usr/local/ydlidar.git
+   49  sudo ldconfig
+   50  cd java/de/konteno/ao/mrover/lidar/
+   51  nano Makefile #
+   52  ls /mnt/c/Program\ Files/Java
+   53  make
+   54  ls /mnt/c/Program\ Files/Java
+   55  java -version
+   56  ls /mnt/c/Program\ Files/Java/jdk1.8.0_171
+   57  ln -s /mnt/c/Program\ Files/Java/jdk1.8.0_171 ~/java_home
+   58  pwd
+   59  ls ~/java_home
+   60  ;s ~/java_home/bin
+   61  ls ~/java_home/bin
+   62  sudo apt install default-jdk
+   63  apt-get update
+   64  export JAVA_HOME=/usr/lib/jvm/default-java/bin
+   65  export PATH="/usr/lib/jvm/default-java/bin:$PATH"
+   66  nano
+   67  nano Makefile #
+   68  make
+   69  echo $JAVA_HOME 
+   70  ls $JAVA_HOME 
+   71  ls /usr/lib/jvm
+   72  find / -name default-java 2>/dev/null
+   73  sudo apt update
+   74  sudo apt install default-jdk
+   75  ls $JAVA_HOME 
+   76  make
+   77  java -verion
+   78  java -version
+   79  nano
+   80  nano Makefile #
+   81  makew
+   82  make
+   83  nano Makefile
+   84  cp Makefile Makefile.old
+   85  nano Makefile
+   86  make
+   87  make jar
+   88  make test1
+   89  nano Makefle
+   90  pwd
+   91  nano Makefile
+   92  make test1
+   93  sudo apt install scala
+   94  nano YDLidarX4.java
+   95  make; make jar; make test1
+   96  make
+   97  ls -l
+   98  nano YdLidarX4.java 
+   99  nano YDLidarX4.java
+  100  make
+  101  nano Makefile
+  102  javac -h -classpath ../../../../../../java YdLidarX4.java
+  103  javac -classpath ../../../../../../java YdLidarX4.java
+  104  which javac
+  105  javac -version
+  106  sudo apt uninstall scala
+  107  sudo apt remove scale
+  108  sudo apt remove scala
+  109  make
+  110  nano Makefile
+  111  nano YdLidarX4.java 
+  112  make
+  113  nano YdLidarX4.java 
+  114  make
+  115  javac -h -classpath ../../../../../../java YdLidarX4.java
+  116  javac -classpath ../../../../../../java YdLidarX4.java
+  117  javac -h -classpath ../../../../../../java YdLidarX4.java
+  118  make
+  119  nano YdLidarX4.java 
+  120  make
+  121  javac -classpath ../../../../../../java YdLidarX4.java
+  122  make
+  123  make jar
+  124  make test1
+  125  nano YdLidarX4.java 
+  126  git add.
+  127  git add .
+  128  git commit
+  129  git commit -m "stable"
+  130  git config --global user.email "kevin.maynard82@gmail.com"
+  131  git config --global user.name "Kevin Maynard"
+  132  git commit -m "stable"
+  133  git push 
+  134  nano YdLidarX4.java 
+  135  javac -classpath ../../../../../../java YdLidarX4.java
+  136  make
+  137  make jar
+  138  make test1
+  139  nano YdLidarX4.java 
+  140  javac -classpath ../../../../../../java YdLidarX4.java
+  141  make
+  142  make jar
+  143  make test1
+  144  nano YdLidarX4.java
+  145  javac -classpath ../../../../../../java YdLidarX4.java
+  146  make
+  147  make jar
+  148  make test1
+  149  ls /dev
+  150  nano YdLidarX4.java
+  151  ls -a
+  152  rm *.swp
+  153  ls -a
+  154  rm -v *.swp 
+  155  ps 
+  156  kill 5849
+  157  kill 6762
+  158  ls -a
+  159  rm -v *.swp
+  160  rm .Makefle.swp
+  161  rm .YdLidarX4.java.swp
+  162  nano YdLidarX4.java
+  163  javac -classpath ../../../../../../java YdLidarX4.java
+  164  make
+  165  make jar
+  166  make test1
+  167  ls /dev 
+  168  cat YdLidarX4.java 
+  169  history > commands.txt
